@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct PlantCategoryView: View {
+    let category: PlantCategory
+    
     var body: some View {
         VStack {
-            Image("OutdoorPlant")
+            Image(category.imageName)
                 .frame(width: 30, height: 30)
                 .padding()
                 .overlay(
@@ -19,7 +21,7 @@ struct PlantCategoryView: View {
                         .frame(width: 70, height: 70)
                 )
             
-            Text("Outdoor")
+            Text(category.category)
                 .font(.system(size: 10, weight: .medium))
                 .padding(.top, 10)
         }
@@ -29,6 +31,6 @@ struct PlantCategoryView: View {
 
 struct PlantCategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantCategoryView()
+        PlantCategoryView(category: PlantService.instance.getPlantCategories()[0])
     }
 }

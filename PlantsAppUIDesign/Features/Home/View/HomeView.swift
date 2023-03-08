@@ -9,9 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     @State var searchText = ""
+    @StateObject var viewModel = HomeViewModel()
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Discover Your Plant")
                 .font(.system(size: 20, weight: .bold))
             
@@ -34,8 +35,8 @@ struct HomeView: View {
             
             ScrollView(.horizontal) {
                 HStack {
-                    ForEach(1..<5) { _ in
-                        PlantCategoryView()
+                    ForEach(viewModel.plantCategories) { category in
+                        PlantCategoryView(category: category)
                     }
                 }
             }
@@ -44,10 +45,13 @@ struct HomeView: View {
                 .font(.system(size: 16, weight: .medium))
                 .padding(.top)
             
-            ScrollView(.horizontal) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(1..<5) { _ in
-                        PopularPlantView()
+                    ForEach(viewModel.plants) { plant in
+                        PopularPlantView(plant: plant)
+                            .onTapGesture {
+                                viewModel.selectedPlant = plant
+                            }
                     }
                 }
             }
@@ -55,6 +59,9 @@ struct HomeView: View {
             Spacer()
         }
         .padding()
+        .fullScreenCover(item: $viewModel.selectedPlant) { plant in
+            PlantDetailView(plant: plant)
+        }
     }
 }
 

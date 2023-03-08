@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		F179DBD629B757330006F414 /* PlantCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179DBD529B757330006F414 /* PlantCategoryView.swift */; };
 		F179DBD829B7585A0006F414 /* PopularPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179DBD729B7585A0006F414 /* PopularPlantView.swift */; };
+		F1B66D7729B89BA8003D2F35 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D7629B89BA8003D2F35 /* Plant.swift */; };
+		F1B66D7B29B89C20003D2F35 /* PlantType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D7A29B89C20003D2F35 /* PlantType.swift */; };
+		F1B66D7D29B89C48003D2F35 /* PlantSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D7C29B89C48003D2F35 /* PlantSize.swift */; };
+		F1B66D8029B89C91003D2F35 /* PlantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D7F29B89C91003D2F35 /* PlantService.swift */; };
+		F1B66D8329B89D86003D2F35 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D8229B89D86003D2F35 /* HomeViewModel.swift */; };
+		F1B66D8529B8A342003D2F35 /* PlantCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D8429B8A342003D2F35 /* PlantCategory.swift */; };
+		F1B66D8829B8A574003D2F35 /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D8729B8A574003D2F35 /* PlantDetailView.swift */; };
+		F1B66D8C29B8AB2E003D2F35 /* PlantDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D8B29B8AB2E003D2F35 /* PlantDetailViewModel.swift */; };
+		F1B66D8E29B8AC57003D2F35 /* SimilarPlantTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B66D8D29B8AC57003D2F35 /* SimilarPlantTypeView.swift */; };
 		F1C8D54829B74147006525AB /* PlantsAppUIDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8D54729B74147006525AB /* PlantsAppUIDesignApp.swift */; };
 		F1C8D54C29B74149006525AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C8D54B29B74149006525AB /* Assets.xcassets */; };
 		F1C8D54F29B74149006525AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C8D54E29B74149006525AB /* Preview Assets.xcassets */; };
@@ -20,6 +29,15 @@
 /* Begin PBXFileReference section */
 		F179DBD529B757330006F414 /* PlantCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategoryView.swift; sourceTree = "<group>"; };
 		F179DBD729B7585A0006F414 /* PopularPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPlantView.swift; sourceTree = "<group>"; };
+		F1B66D7629B89BA8003D2F35 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		F1B66D7A29B89C20003D2F35 /* PlantType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantType.swift; sourceTree = "<group>"; };
+		F1B66D7C29B89C48003D2F35 /* PlantSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSize.swift; sourceTree = "<group>"; };
+		F1B66D7F29B89C91003D2F35 /* PlantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantService.swift; sourceTree = "<group>"; };
+		F1B66D8229B89D86003D2F35 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F1B66D8429B8A342003D2F35 /* PlantCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategory.swift; sourceTree = "<group>"; };
+		F1B66D8729B8A574003D2F35 /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
+		F1B66D8B29B8AB2E003D2F35 /* PlantDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewModel.swift; sourceTree = "<group>"; };
+		F1B66D8D29B8AC57003D2F35 /* SimilarPlantTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarPlantTypeView.swift; sourceTree = "<group>"; };
 		F1C8D54429B74147006525AB /* PlantsAppUIDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantsAppUIDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C8D54729B74147006525AB /* PlantsAppUIDesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsAppUIDesignApp.swift; sourceTree = "<group>"; };
 		F1C8D54B29B74149006525AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,8 +63,69 @@
 			children = (
 				F179DBD529B757330006F414 /* PlantCategoryView.swift */,
 				F179DBD729B7585A0006F414 /* PopularPlantView.swift */,
+				F1B66D8D29B8AC57003D2F35 /* SimilarPlantTypeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F1B66D7829B89BAD003D2F35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1B66D7629B89BA8003D2F35 /* Plant.swift */,
+				F1B66D7A29B89C20003D2F35 /* PlantType.swift */,
+				F1B66D7C29B89C48003D2F35 /* PlantSize.swift */,
+				F1B66D8429B8A342003D2F35 /* PlantCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1B66D7929B89BB6003D2F35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1C8D56029B75287006525AB /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1B66D7E29B89C75003D2F35 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F1B66D7F29B89C91003D2F35 /* PlantService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F1B66D8129B89D79003D2F35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1B66D8229B89D86003D2F35 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1B66D8629B8A55A003D2F35 /* PlantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F1B66D8929B8AB0F003D2F35 /* View */,
+				F1B66D8A29B8AB14003D2F35 /* ViewModel */,
+			);
+			path = PlantDetail;
+			sourceTree = "<group>";
+		};
+		F1B66D8929B8AB0F003D2F35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1B66D8729B8A574003D2F35 /* PlantDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1B66D8A29B8AB14003D2F35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1B66D8B29B8AB2E003D2F35 /* PlantDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F1C8D53B29B74147006525AB = {
@@ -90,6 +169,7 @@
 				F1C8D55C29B74E9F006525AB /* Base */,
 				F1C8D55729B74BC0006525AB /* Auth */,
 				F1C8D55829B74BC8006525AB /* Home */,
+				F1B66D8629B8A55A003D2F35 /* PlantDetail */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -105,7 +185,10 @@
 		F1C8D55829B74BC8006525AB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F1C8D56029B75287006525AB /* HomeView.swift */,
+				F1B66D7929B89BB6003D2F35 /* View */,
+				F1B66D8129B89D79003D2F35 /* ViewModel */,
+				F1B66D7829B89BAD003D2F35 /* Model */,
+				F1B66D7E29B89C75003D2F35 /* Service */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -198,11 +281,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F179DBD829B7585A0006F414 /* PopularPlantView.swift in Sources */,
+				F1B66D8329B89D86003D2F35 /* HomeViewModel.swift in Sources */,
+				F1B66D8E29B8AC57003D2F35 /* SimilarPlantTypeView.swift in Sources */,
 				F1C8D55A29B74BE6006525AB /* LoginView.swift in Sources */,
+				F1B66D8529B8A342003D2F35 /* PlantCategory.swift in Sources */,
 				F1C8D56129B75287006525AB /* HomeView.swift in Sources */,
+				F1B66D7B29B89C20003D2F35 /* PlantType.swift in Sources */,
 				F1C8D54829B74147006525AB /* PlantsAppUIDesignApp.swift in Sources */,
+				F1B66D8C29B8AB2E003D2F35 /* PlantDetailViewModel.swift in Sources */,
+				F1B66D8029B89C91003D2F35 /* PlantService.swift in Sources */,
+				F1B66D7729B89BA8003D2F35 /* Plant.swift in Sources */,
+				F1B66D8829B8A574003D2F35 /* PlantDetailView.swift in Sources */,
 				F1C8D55F29B74EAF006525AB /* Color.swift in Sources */,
 				F179DBD629B757330006F414 /* PlantCategoryView.swift in Sources */,
+				F1B66D7D29B89C48003D2F35 /* PlantSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

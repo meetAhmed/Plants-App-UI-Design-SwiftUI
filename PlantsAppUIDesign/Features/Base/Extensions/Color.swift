@@ -12,6 +12,10 @@ extension Color {
         Color("AppGreenColor")
     }
     
+    static var appGreenShade2: Color {
+        Color("AppGreenShade2")
+    }
+    
     static var appGrayColor: Color {
         Color("AppGrayColor")
     }

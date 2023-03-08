@@ -8,35 +8,67 @@
 import SwiftUI
 
 struct PopularPlantView: View {
+    let plant: Plant
+    
     var body: some View {
-        VStack {
-            Image("Cactus")
-                .resizable()
-                .frame(width: UIScreen.main.bounds.width * 0.50, height: 200)
-            
-            VStack(alignment: .leading) {
-                Text("Round Cactus")
-                Text("$21.9")
+        ZStack(alignment: .bottom) {
+            ZStack(alignment: .topLeading) {
+                Image(plant.imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(
+                        width: UIScreen.main.bounds.width * 0.65,
+                        height: UIScreen.main.bounds.height * 0.42
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                
+                HStack {
+                    Circle()
+                        .fill(plant.type == .outdoor ? .green : .orange)
+                        .frame(width: 7, height: 7)
+                    
+                    Text(plant.type.rawValue)
+                        .font(.system(size: 12, weight: .medium))
+                }
+                .padding(6)
+                .background(
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.white.opacity(0.8))
+                )
+                .padding(6)
             }
-            .font(.system(size: 10, weight: .medium))
-            .padding()
-            .frame(maxWidth: .infinity)
+            
+            HStack(alignment: .top) {
+                VStack(alignment: .leading) {
+                    Text(plant.name)
+                        .font(.system(size: 14, weight: .semibold))
+                    
+                    Text(plant.price)
+                        .font(.system(size: 22, weight: .bold))
+                }
+                
+                Spacer()
+                
+                Image(systemName: "heart")
+            }
+            .padding(8)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(.white)
+                    .fill(.white.opacity(0.8))
             )
-            .padding()
+            .padding(8)
         }
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(Color.appGrayColor)
+        .frame(
+            width: UIScreen.main.bounds.width * 0.65,
+            height: UIScreen.main.bounds.height * 0.42
         )
-        .frame(width: UIScreen.main.bounds.width * 0.50)
+        .padding(6)
     }
 }
 
 struct PopularPlantView_Previews: PreviewProvider {
     static var previews: some View {
-        PopularPlantView()
+        PopularPlantView(plant: PlantService.instance.getPlants()[0])
     }
 }
