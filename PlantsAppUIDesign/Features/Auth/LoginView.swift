@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State var isUserLoggedIn = false
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             Image("LoginBackground")
@@ -30,7 +32,7 @@ struct LoginView: View {
                     .foregroundColor(.white)
                 
                 Button {
-                    
+                    isUserLoggedIn.toggle()
                 } label: {
                     Text("Login")
                         .font(.system(size: 18, weight: .medium))
@@ -44,7 +46,7 @@ struct LoginView: View {
                 }
                 
                 Button {
-                    
+                    isUserLoggedIn.toggle()
                 } label: {
                     Text("Sign Up")
                         .font(.system(size: 18, weight: .medium))
@@ -58,7 +60,7 @@ struct LoginView: View {
                 }
                 
                 Button {
-                    
+                    isUserLoggedIn.toggle()
                 } label: {
                     Text("Guest")
                         .font(.system(size: 18, weight: .medium))
@@ -68,6 +70,9 @@ struct LoginView: View {
                 }
             }
             .padding()
+        }
+        .fullScreenCover(isPresented: $isUserLoggedIn) {
+            HomeView()
         }
     }
 }

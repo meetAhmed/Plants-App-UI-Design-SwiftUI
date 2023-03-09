@@ -16,8 +16,8 @@ struct SimilarPlantTypeView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(
-                    width: UIScreen.main.bounds.width * 0.45,
-                    height: UIScreen.main.bounds.height * 0.20
+                    width: UIScreen.main.bounds.width * 0.40,
+                    height: UIScreen.main.bounds.height * 0.15
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             

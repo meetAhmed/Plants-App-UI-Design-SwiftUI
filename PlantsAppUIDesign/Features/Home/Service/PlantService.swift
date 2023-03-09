@@ -19,9 +19,10 @@ extension PlantService {
                 name: "Round Cactus",
                 price: "$21.9",
                 imageName: "Cactus",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, risus pulvinar aliquet faucibus, nisi quam luctus lectus, in gravida ex orci ac sem. Read More...",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, risus pulvinar aliquet faucibus, nisi quam luctus lectus, in gravida ex orci ac sem.",
                 type: .outdoor,
-                size: .medium
+                size: .medium,
+                showOnHomeScreen: true
             ),
             .init(
                 name: "Montsera Plant",
@@ -29,7 +30,8 @@ extension PlantService {
                 imageName: "Montsera",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, risus pulvinar aliquet faucibus, nisi quam luctus lectus, in gravida ex orci ac sem.",
                 type: .indoor,
-                size: .small
+                size: .small,
+                showOnHomeScreen: true
             ),
             .init(
                 name: "Chin Cactus",

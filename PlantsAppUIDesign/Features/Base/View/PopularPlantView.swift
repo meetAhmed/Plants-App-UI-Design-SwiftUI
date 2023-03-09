@@ -29,6 +29,7 @@ struct PopularPlantView: View {
                     
                     Text(plant.type.rawValue)
                         .font(.system(size: 12, weight: .medium))
+                        .foregroundColor(Color.appGreenColor)
                 }
                 .padding(6)
                 .background(
@@ -58,6 +59,7 @@ struct PopularPlantView: View {
                     .fill(.white.opacity(0.8))
             )
             .padding(8)
+            .foregroundColor(Color.appGreenColor)
         }
         .frame(
             width: UIScreen.main.bounds.width * 0.65,

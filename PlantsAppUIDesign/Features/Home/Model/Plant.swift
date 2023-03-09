@@ -16,4 +16,5 @@ struct Plant: Identifiable {
     let type: PlantType
     let size: PlantSize
     let coverImageName: String = "CactusCoverImage"
+    var showOnHomeScreen = false
 }

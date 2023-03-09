@@ -13,6 +13,6 @@ class PlantDetailViewModel: ObservableObject {
     
     init(plant: Plant) {
         self.plant = plant
-        similarPlants = PlantService.instance.getPlants().filter { plant.type == $0.type && $0.id != plant.id }
+        similarPlants = PlantService.instance.getPlants().filter { plant.type == $0.type && !$0.showOnHomeScreen }
     }
 }
